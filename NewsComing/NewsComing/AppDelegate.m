@@ -13,8 +13,8 @@
 #import "WordController.h"
 #import "VideoController.h"
 #import "MyController.h"
-#import "UMSocialWechatHandler.h"
-#import "UMSocial.h"
+//#import "UMSocialWechatHandler.h"
+//#import "UMSocial.h"
 
 //友盟
 //#define kAppKey  @"5632e65ae0f55a556a0013d9"
