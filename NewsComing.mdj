@@ -1,0 +1,192 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"visible": true,
+					"defaultDiagram": true
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFf8KFGa57YfmE=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "BaseViewModel",
+					"visibility": "public",
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLInterface",
+					"_id": "AAAAAAFf8KKMzp8Em2k=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Interface1",
+					"visibility": "public",
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false
+				}
+			],
+			"visibility": "public"
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFf8KLo7Z9djhE=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model1",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFf8KLo7Z9emgw=",
+					"_parent": {
+						"$ref": "AAAAAAFf8KLo7Z9djhE="
+					},
+					"name": "ClassDiagram1",
+					"visible": true,
+					"defaultDiagram": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFf8KV0vqUnTaw=",
+					"_parent": {
+						"$ref": "AAAAAAFf8KLo7Z9djhE="
+					},
+					"name": "BaseViewModel",
+					"ownedElements": [
+						{
+							"_type": "UMLInterfaceRealization",
+							"_id": "AAAAAAFf8KXMBaV6MQE=",
+							"_parent": {
+								"$ref": "AAAAAAFf8KV0vqUnTaw="
+							},
+							"source": {
+								"$ref": "AAAAAAFf8KV0vqUnTaw="
+							},
+							"target": {
+								"$ref": "AAAAAAFf8KXLzaVRkFs="
+							},
+							"visibility": "public"
+						}
+					],
+					"visibility": "public",
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLInterface",
+					"_id": "AAAAAAFf8KXLzaVRkFs=",
+					"_parent": {
+						"$ref": "AAAAAAFf8KLo7Z9djhE="
+					},
+					"name": "BaseViewModelDelegate",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFf8KYSw6W/l3w=",
+							"_parent": {
+								"$ref": "AAAAAAFf8KXLzaVRkFs="
+							},
+							"source": {
+								"$ref": "AAAAAAFf8KYSjaWWxYc="
+							},
+							"target": {
+								"$ref": "AAAAAAFf8KXLzaVRkFs="
+							},
+							"visibility": "public"
+						}
+					],
+					"visibility": "public",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFf8KYAtqWQGvg=",
+							"_parent": {
+								"$ref": "AAAAAAFf8KXLzaVRkFs="
+							},
+							"name": "Attribute1",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"type": "",
+							"isReadOnly": false,
+							"isOrdered": false,
+							"isUnique": false,
+							"isDerived": false,
+							"aggregation": "none",
+							"isID": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false
+				},
+				{
+					"_type": "UMLInterface",
+					"_id": "AAAAAAFf8KYSjaWWxYc=",
+					"_parent": {
+						"$ref": "AAAAAAFf8KLo7Z9djhE="
+					},
+					"name": "Interface1",
+					"visibility": "public",
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFf8KZQeKY7BXo=",
+					"_parent": {
+						"$ref": "AAAAAAFf8KLo7Z9djhE="
+					},
+					"name": "Class1",
+					"ownedElements": [
+						{
+							"_type": "UMLInterfaceRealization",
+							"_id": "AAAAAAFf8KZQtKZkLkM=",
+							"_parent": {
+								"$ref": "AAAAAAFf8KZQeKY7BXo="
+							},
+							"source": {
+								"$ref": "AAAAAAFf8KZQeKY7BXo="
+							},
+							"target": {
+								"$ref": "AAAAAAFf8KXLzaVRkFs="
+							},
+							"visibility": "public"
+						}
+					],
+					"visibility": "public",
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				}
+			],
+			"visibility": "public"
+		}
+	]
+}

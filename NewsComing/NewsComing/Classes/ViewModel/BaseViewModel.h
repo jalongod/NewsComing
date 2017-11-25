@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 typedef void(^completionHandler)(NSError *error);
 
 @protocol BaseViewModelDelegate <NSObject>
@@ -23,7 +22,6 @@ typedef void(^completionHandler)(NSError *error);
 @end
 
 @interface BaseViewModel : NSObject <BaseViewModelDelegate>
-
 @property (strong, nonatomic) NSMutableArray *dataMArr;
 @property (strong, nonatomic) NSURLSessionDataTask *dataTask;
 
@@ -33,5 +31,6 @@ typedef void(^completionHandler)(NSError *error);
 - (void)suspendTask;
 /** 继续任务 */
 - (void)resumeTask;
+
 
 @end

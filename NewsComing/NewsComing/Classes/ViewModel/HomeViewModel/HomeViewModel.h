@@ -15,8 +15,11 @@
 @property (nonatomic) NewsListType type;
 @property (strong, nonatomic) NSString *updateTime;
 @property (nonatomic) NSInteger page;
-
 @property (nonatomic) NSInteger rowNum;
+/** 存放头部滚动图片数组 */
+@property (strong, nonatomic) NSArray *headImgURLs;
+/** 头部是否有视图 */
+@property (nonatomic) BOOL hasHeadImg;
 
 - (NSURL *)iconURLForRow:(NSInteger)row;
 - (NSString *)titleForRow:(NSInteger)row;
@@ -26,10 +29,5 @@
 
 - (NSInteger)mediaTypeForRow:(NSInteger)row;
 
-/** 存放头部滚动图片数组 */
-@property (strong, nonatomic) NSArray *headImgURLs;
-
-/** 头部是否有视图 */
-@property (nonatomic) BOOL hasHeadImg;
 
 @end

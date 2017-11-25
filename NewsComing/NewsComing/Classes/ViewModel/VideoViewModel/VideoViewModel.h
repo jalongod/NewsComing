@@ -12,6 +12,7 @@
 @interface VideoViewModel : BaseViewModel
 
 @property (nonatomic) NSInteger rowNum;
+@property (nonatomic) NSInteger page;
 
 - (NSURL *)iconURLForRow:(NSInteger)row;
 - (NSString *)titleForRow:(NSInteger)row;
@@ -20,6 +21,5 @@
 
 - (NSURL *)videoURLForRow:(NSInteger)row;
 
-@property (nonatomic) NSInteger page;
 
 @end

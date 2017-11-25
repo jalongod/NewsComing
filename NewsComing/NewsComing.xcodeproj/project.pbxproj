@@ -59,6 +59,8 @@
 		C5E5049C1E64190F003F1943 /* WordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E504561E64190E003F1943 /* WordViewModel.m */; };
 		C5E504AB1E642EE5003F1943 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E504A11E642E2C003F1943 /* libstdc++.tbd */; };
 		CBD8EAE254530AD237267E97 /* libPods-NewsComing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3363DA4589CA6BE12754E7FA /* libPods-NewsComing.a */; };
+		E7FE788B1FC9189C0079C916 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FE788A1FC9189C0079C916 /* UserModel.m */; };
+		E7FE788E1FC9199F0079C916 /* UserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FE788D1FC9199F0079C916 /* UserViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +165,11 @@
 		C5E504A51E642E62003F1943 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		C5E504A71E642E70003F1943 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C5E504A91E642E85003F1943 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		E7FE78891FC9189C0079C916 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		E7FE788A1FC9189C0079C916 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		E7FE788C1FC9199F0079C916 /* UserViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserViewModel.h; sourceTree = "<group>"; };
+		E7FE788D1FC9199F0079C916 /* UserViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserViewModel.m; sourceTree = "<group>"; };
+		E7FE788F1FC91BD30079C916 /* NSObjectDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObjectDefine.h; sourceTree = "<group>"; };
 		ED055A059EB7F5AA60DE0F7B /* Pods-NewsComing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsComing.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsComing/Pods-NewsComing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -263,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				C5E503AF1E64190E003F1943 /* Const.h */,
+				E7FE788F1FC91BD30079C916 /* NSObjectDefine.h */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -321,6 +329,7 @@
 			children = (
 				C5E503C01E64190E003F1943 /* BaseModel.h */,
 				C5E503C11E64190E003F1943 /* BaseModel.m */,
+				E7FE78881FC918860079C916 /* UserModel */,
 				C5E503C21E64190E003F1943 /* HomeModel */,
 				C5E503C51E64190E003F1943 /* VideoModel */,
 				C5E503CC1E64190E003F1943 /* WordPicModel */,
@@ -550,6 +559,8 @@
 				C5E5044C1E64190E003F1943 /* HomeViewModel */,
 				C5E5044F1E64190E003F1943 /* VideoViewModel */,
 				C5E504521E64190E003F1943 /* WordPicViewModel */,
+				E7FE788C1FC9199F0079C916 /* UserViewModel.h */,
+				E7FE788D1FC9199F0079C916 /* UserViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -581,6 +592,15 @@
 				C5E504561E64190E003F1943 /* WordViewModel.m */,
 			);
 			path = WordPicViewModel;
+			sourceTree = "<group>";
+		};
+		E7FE78881FC918860079C916 /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7FE78891FC9189C0079C916 /* UserModel.h */,
+				E7FE788A1FC9189C0079C916 /* UserModel.m */,
+			);
+			path = UserModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -726,6 +746,7 @@
 			files = (
 				C5E504591E64190E003F1943 /* NSObject+Hint.m in Sources */,
 				C5E5048B1E64190F003F1943 /* WordCell.m in Sources */,
+				E7FE788B1FC9189C0079C916 /* UserModel.m in Sources */,
 				C5E504901E64190F003F1943 /* RegisterController.m in Sources */,
 				C5E5045F1E64190E003F1943 /* VideoModel.m in Sources */,
 				C5E5046A1E64190E003F1943 /* README.md in Sources */,
@@ -757,6 +778,7 @@
 				C5E504601E64190E003F1943 /* WordModel.m in Sources */,
 				C5E504991E64190F003F1943 /* HomeViewModel.m in Sources */,
 				C5E5049C1E64190F003F1943 /* WordViewModel.m in Sources */,
+				E7FE788E1FC9199F0079C916 /* UserViewModel.m in Sources */,
 				C5E504971E64190F003F1943 /* WordDetailController.m in Sources */,
 				C5E504581E64190E003F1943 /* AppDelegate+DDLog.m in Sources */,
 				C5E5045B1E64190E003F1943 /* MyImageView.m in Sources */,

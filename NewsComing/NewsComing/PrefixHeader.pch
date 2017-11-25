@@ -21,6 +21,7 @@
 
 //存放全局宏定义
 #import "Const.h"
+#import "NSObjectDefine.h"
 
 #import "BarItem.h"
 

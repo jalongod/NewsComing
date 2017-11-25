@@ -37,5 +37,6 @@ cell.preservesSuperviewLayoutMargins = NO; \
 
 //Docment文件夹目录
 #define kDocumentPath NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject
+#define kFilePathUserInfo [kDocumentPath stringByAppendingPathComponent:@"userInfo"]
 
 #endif /* Const_h */

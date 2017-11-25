@@ -12,14 +12,14 @@
 @interface PicViewModel : BaseViewModel
 
 @property (nonatomic) NSInteger rowNum;
+@property (nonatomic) NSInteger setID;
 
 
 - (NSArray *)iconURLsForRow:(NSInteger)row;
 - (NSString *)titleForRow:(NSInteger)row;
 - (NSString *)browseNumForRow:(NSInteger)row;
-
-@property (nonatomic) NSInteger setID;
-
 - (PicModel *)modelForRow:(NSInteger)row;
+
+
 
 @end

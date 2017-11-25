@@ -9,7 +9,7 @@
 #import "RegisterLoginController.h"
 #import "RegisterController.h"
 #import "MyController.h"
-
+#import "UserViewModel.h"
 @interface RegisterLoginController ()
 
 @property (strong, nonatomic) UITextField *passwdTF;
@@ -49,25 +49,12 @@
             make.right.mas_equalTo(-20);
         }];
         [_loginBtn bk_addEventHandler:^(id sender) {
-            
-            [BmobUser loginWithUsernameInBackground:self.usernameTF.text password:self.passwdTF.text block:^(BmobUser *user, NSError *error) {
-                if (user) {
-                    MyController *vc = [MyController new];
-                    vc.label.text = self.usernameTF.text;
-                    [self.navigationController pushViewController:vc animated:YES];
-                }else {
-                    if ([self.usernameTF.text isEqualToString:@""] && [self.passwdTF.text isEqualToString:@""]) {
-                        [self showSuccessWithMsg:@"请输入用户名和密码"];
-                    }else if ([self.passwdTF.text isEqualToString:@""]) {
-                        [self showSuccessWithMsg:@"请输入密码"];
-                    }else if ([self.usernameTF.text isEqualToString:@""]) {
-                        [self showSuccessWithMsg:@"请输入用户名"];
-                    }else {
-                        [self showSuccessWithMsg:@"请先注册"];
-                    }
-                }
+            [self showLoad];
+            MJWeakSelf
+            [[UserViewModel shareUserViewModel]loginWithUserName:self.usernameTF.text Pwd:self.passwdTF.text completeHandler:^(NSError *error) {
+                [weakSelf hideLoad];
+                [weakSelf.navigationController popViewControllerAnimated:YES];
             }];
-            
         } forControlEvents:UIControlEventTouchUpInside];
     }
     return _loginBtn;

@@ -31,6 +31,7 @@
     [self.tableView.mj_header beginRefreshing];
 }
 
+
 - (UIView *)configHeadView {
     [_timer invalidate];
     if (!self.homeVM.hasHeadImg) {
