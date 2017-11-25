@@ -1,0 +1,6 @@
+framework module Pods_NewsComing {
+  umbrella header "Pods-NewsComing-umbrella.h"
+
+  export *
+  module * { export * }
+}
