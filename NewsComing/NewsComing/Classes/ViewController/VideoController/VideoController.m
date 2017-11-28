@@ -8,7 +8,7 @@
 
 #import "VideoController.h"
 #import "VideoCell.h"
-#import "VideoViewModel.h"
+#import "ViewModelFactory.h"
 
 @interface VideoController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) VideoViewModel *videoVM;
@@ -74,7 +74,7 @@
 #pragma mark - 懒加载
 - (VideoViewModel *)videoVM {
     if(_videoVM == nil) {
-        _videoVM = [[VideoViewModel alloc] init];
+        _videoVM = (VideoViewModel *)[[ViewModelFactory shareViewModelFactory]getViewModel:ViewModelTypeVideo];
     }
     return _videoVM;
 }

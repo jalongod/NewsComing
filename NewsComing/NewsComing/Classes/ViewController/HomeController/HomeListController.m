@@ -11,6 +11,7 @@
 #import "HomeViewModel.h"
 #import "HomeDetailController.h"
 #import "iCarousel.h"
+#import "ViewModelFactory.h"
 
 @interface HomeListController () <UITableViewDataSource, UITableViewDelegate, iCarouselDataSource, iCarouselDelegate>
 
@@ -146,7 +147,8 @@
 #pragma mark - 懒加载
 - (HomeViewModel *)homeVM {
     if(_homeVM == nil) {
-        _homeVM = [[HomeViewModel alloc] initWithType:self.infoType.integerValue];
+        _homeVM = (HomeViewModel *)[[ViewModelFactory shareViewModelFactory] getViewModel:ViewModelTypeHome];
+        [_homeVM setType:self.infoType.integerValue];
     }
     return _homeVM;
 }

@@ -10,6 +10,7 @@
 #import "RegisterController.h"
 #import "MyController.h"
 #import "UserViewModel.h"
+#import <ReactiveObjC.h>
 @interface RegisterLoginController ()
 
 @property (strong, nonatomic) UITextField *passwdTF;
@@ -73,6 +74,7 @@
             make.left.right.mas_equalTo(0);
             make.height.mas_equalTo(45);
         }];
+        
     }
     return _usernameTF;
 }

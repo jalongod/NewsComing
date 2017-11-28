@@ -7,7 +7,7 @@
 //
 
 #import "WordController.h"
-#import "WordViewModel.h"
+#import "ViewModelFactory.h"
 #import "PicController.h"
 #import "WordCell.h"
 #import "WordDetailController.h"
@@ -70,6 +70,7 @@
 - (WordViewModel *)wordVM {
     if(_wordVM == nil) {
         _wordVM = [[WordViewModel alloc] init];
+        _wordVM = (WordViewModel *)[[ViewModelFactory shareViewModelFactory] getViewModel:ViewModelTypeWord];
     }
     return _wordVM;
 }

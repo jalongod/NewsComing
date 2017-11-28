@@ -11,7 +11,6 @@
 
 @interface HomeViewModel : BaseViewModel
 
-- (instancetype)initWithType:(NewsListType)type;
 @property (nonatomic) NewsListType type;
 @property (strong, nonatomic) NSString *updateTime;
 @property (nonatomic) NSInteger page;

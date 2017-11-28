@@ -59,6 +59,7 @@
 		C5E5049C1E64190F003F1943 /* WordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E504561E64190E003F1943 /* WordViewModel.m */; };
 		C5E504AB1E642EE5003F1943 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E504A11E642E2C003F1943 /* libstdc++.tbd */; };
 		CBD8EAE254530AD237267E97 /* libPods-NewsComing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3363DA4589CA6BE12754E7FA /* libPods-NewsComing.a */; };
+		E71724981FCD13BB00F4FC2E /* ViewModelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E71724971FCD13BB00F4FC2E /* ViewModelFactory.m */; };
 		E7FE788B1FC9189C0079C916 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FE788A1FC9189C0079C916 /* UserModel.m */; };
 		E7FE788E1FC9199F0079C916 /* UserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FE788D1FC9199F0079C916 /* UserViewModel.m */; };
 /* End PBXBuildFile section */
@@ -165,6 +166,8 @@
 		C5E504A51E642E62003F1943 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		C5E504A71E642E70003F1943 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C5E504A91E642E85003F1943 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		E71724961FCD13BB00F4FC2E /* ViewModelFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelFactory.h; sourceTree = "<group>"; };
+		E71724971FCD13BB00F4FC2E /* ViewModelFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModelFactory.m; sourceTree = "<group>"; };
 		E7FE78891FC9189C0079C916 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		E7FE788A1FC9189C0079C916 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		E7FE788C1FC9199F0079C916 /* UserViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserViewModel.h; sourceTree = "<group>"; };
@@ -554,13 +557,14 @@
 		C5E504491E64190E003F1943 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E71724961FCD13BB00F4FC2E /* ViewModelFactory.h */,
+				E71724971FCD13BB00F4FC2E /* ViewModelFactory.m */,
 				C5E5044A1E64190E003F1943 /* BaseViewModel.h */,
 				C5E5044B1E64190E003F1943 /* BaseViewModel.m */,
 				C5E5044C1E64190E003F1943 /* HomeViewModel */,
 				C5E5044F1E64190E003F1943 /* VideoViewModel */,
+				E71724991FCD14CF00F4FC2E /* UserViewModel */,
 				C5E504521E64190E003F1943 /* WordPicViewModel */,
-				E7FE788C1FC9199F0079C916 /* UserViewModel.h */,
-				E7FE788D1FC9199F0079C916 /* UserViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -592,6 +596,15 @@
 				C5E504561E64190E003F1943 /* WordViewModel.m */,
 			);
 			path = WordPicViewModel;
+			sourceTree = "<group>";
+		};
+		E71724991FCD14CF00F4FC2E /* UserViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7FE788C1FC9199F0079C916 /* UserViewModel.h */,
+				E7FE788D1FC9199F0079C916 /* UserViewModel.m */,
+			);
+			path = UserViewModel;
 			sourceTree = "<group>";
 		};
 		E7FE78881FC918860079C916 /* UserModel */ = {
@@ -768,6 +781,7 @@
 				C5E502A91E63CC7A003F1943 /* main.m in Sources */,
 				C5E5048C1E64190F003F1943 /* HomeController.m in Sources */,
 				C5E504941E64190F003F1943 /* PicController.m in Sources */,
+				E71724981FCD13BB00F4FC2E /* ViewModelFactory.m in Sources */,
 				C5E504891E64190F003F1943 /* VideoCell.m in Sources */,
 				C5E504921E64190F003F1943 /* SetController.m in Sources */,
 				C5E504641E64190E003F1943 /* PicNetManager.m in Sources */,

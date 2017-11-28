@@ -7,7 +7,7 @@
 //
 
 #import "PicController.h"
-#import "PicViewModel.h"
+#import "ViewModelFactory.h"
 #import "WordController.h"
 #import "PicCell.h"
 #import "PicDetailController.h"
@@ -76,7 +76,7 @@
 
 - (PicViewModel *)picVM {
     if(_picVM == nil) {
-        _picVM = [[PicViewModel alloc] init];
+        _picVM = (PicViewModel *)[[ViewModelFactory shareViewModelFactory] getViewModel:ViewModelTypePic];
     }
     return _picVM;
 }

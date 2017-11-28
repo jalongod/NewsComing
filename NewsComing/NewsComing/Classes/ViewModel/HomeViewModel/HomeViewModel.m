@@ -9,19 +9,11 @@
 #import "HomeViewModel.h"
 
 @implementation HomeViewModel
-
-- (instancetype)initWithType:(NewsListType)type {
-    if (self = [super init]) {
-        self.type = type;
-    }
-    return self;
-}
-
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        NSAssert1(NO, @"%s 必须使用initWithType方法初始化", __func__);
+        
     }
     return self;
 }
