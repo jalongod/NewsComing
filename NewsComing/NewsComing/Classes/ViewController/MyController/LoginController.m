@@ -6,12 +6,12 @@
 //  Copyright © 2015年 renbo. All rights reserved.
 //
 
-#import "RegisterLoginController.h"
+#import "LoginController.h"
 #import "RegisterController.h"
 #import "MyController.h"
 #import "UserViewModel.h"
 #import <ReactiveObjC.h>
-@interface RegisterLoginController ()
+@interface LoginController ()
 
 @property (strong, nonatomic) UITextField *passwdTF;
 
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation RegisterLoginController
+@implementation LoginController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

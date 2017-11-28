@@ -45,7 +45,7 @@
 		C5E5048E1E64190F003F1943 /* HomeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E504331E64190E003F1943 /* HomeListController.m */; };
 		C5E5048F1E64190F003F1943 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E504361E64190E003F1943 /* MyController.m */; };
 		C5E504901E64190F003F1943 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E504381E64190E003F1943 /* RegisterController.m */; };
-		C5E504911E64190F003F1943 /* RegisterLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E5043A1E64190E003F1943 /* RegisterLoginController.m */; };
+		C5E504911E64190F003F1943 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E5043A1E64190E003F1943 /* LoginController.m */; };
 		C5E504921E64190F003F1943 /* SetController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E5043C1E64190E003F1943 /* SetController.m */; };
 		C5E504931E64190F003F1943 /* VideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E5043F1E64190E003F1943 /* VideoController.m */; };
 		C5E504941E64190F003F1943 /* PicController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E504421E64190E003F1943 /* PicController.m */; };
@@ -135,8 +135,8 @@
 		C5E504361E64190E003F1943 /* MyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyController.m; sourceTree = "<group>"; };
 		C5E504371E64190E003F1943 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		C5E504381E64190E003F1943 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
-		C5E504391E64190E003F1943 /* RegisterLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterLoginController.h; sourceTree = "<group>"; };
-		C5E5043A1E64190E003F1943 /* RegisterLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterLoginController.m; sourceTree = "<group>"; };
+		C5E504391E64190E003F1943 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		C5E5043A1E64190E003F1943 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		C5E5043B1E64190E003F1943 /* SetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetController.h; sourceTree = "<group>"; };
 		C5E5043C1E64190E003F1943 /* SetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetController.m; sourceTree = "<group>"; };
 		C5E5043E1E64190E003F1943 /* VideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoController.h; sourceTree = "<group>"; };
@@ -454,8 +454,6 @@
 		C5E504201E64190E003F1943 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C5E504211E64190E003F1943 /* HomeCell.h */,
-				C5E504221E64190E003F1943 /* HomeCell.m */,
 				C5E504231E64190E003F1943 /* HomeView */,
 				C5E504241E64190E003F1943 /* VideoView */,
 				C5E504271E64190E003F1943 /* WordPicView */,
@@ -466,6 +464,8 @@
 		C5E504231E64190E003F1943 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				C5E504211E64190E003F1943 /* HomeCell.h */,
+				C5E504221E64190E003F1943 /* HomeCell.m */,
 				C5ACE5A11F4AADFF0069978B /* placeholder */,
 			);
 			path = HomeView;
@@ -522,8 +522,8 @@
 				C5E504361E64190E003F1943 /* MyController.m */,
 				C5E504371E64190E003F1943 /* RegisterController.h */,
 				C5E504381E64190E003F1943 /* RegisterController.m */,
-				C5E504391E64190E003F1943 /* RegisterLoginController.h */,
-				C5E5043A1E64190E003F1943 /* RegisterLoginController.m */,
+				C5E504391E64190E003F1943 /* LoginController.h */,
+				C5E5043A1E64190E003F1943 /* LoginController.m */,
 				C5E5043B1E64190E003F1943 /* SetController.h */,
 				C5E5043C1E64190E003F1943 /* SetController.m */,
 			);
@@ -772,7 +772,7 @@
 				C5E504571E64190E003F1943 /* BarItem.m in Sources */,
 				C5E504611E64190E003F1943 /* BaseNetManager.m in Sources */,
 				C5E504981E64190F003F1943 /* BaseViewModel.m in Sources */,
-				C5E504911E64190F003F1943 /* RegisterLoginController.m in Sources */,
+				C5E504911E64190F003F1943 /* LoginController.m in Sources */,
 				C5E504961E64190F003F1943 /* WordController.m in Sources */,
 				C5E5048F1E64190F003F1943 /* MyController.m in Sources */,
 				C5E5049B1E64190F003F1943 /* PicViewModel.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "MyController.h"
 #import "SetController.h"
-#import "RegisterLoginController.h"
+#import "LoginController.h"
 
 @interface MyController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) UIView *headView;
@@ -98,7 +98,7 @@
         }];
         [myBtn bk_addEventHandler:^(id sender) {
             if ([self.label.text isEqualToString:@"注册/登陆"]) {
-                RegisterLoginController *vc = [RegisterLoginController new];
+                LoginController *vc = [LoginController new];
                 [self.navigationController pushViewController:vc animated:YES];
             }
         } forControlEvents:UIControlEventTouchUpInside];

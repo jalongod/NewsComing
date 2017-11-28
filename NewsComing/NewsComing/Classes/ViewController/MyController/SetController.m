@@ -8,7 +8,6 @@
 
 #import "SetController.h"
 #import "MyController.h"
-#import "RegisterLoginController.h"
 
 @interface SetController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) UITableView *tableView;

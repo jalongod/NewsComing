@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegisterLoginController : UIViewController
+@interface LoginController : UIViewController
 
 @property (strong, nonatomic) UITextField *usernameTF;
 
